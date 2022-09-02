@@ -1,1 +1,8 @@
-<h2> Hello world with ruby on rails</h2>
+<h1>Articles</h1>
+<ul>
+	<% @articles.each do |article| %>
+		<li>
+		<%= article.title%>
+		</li>
+	<% end %>
+</ul>
