@@ -2,7 +2,9 @@
 <ul>
 	<% @articles.each do |article| %>
 		<li>
+		<a href="/myarticles/<%= article.id %>">
 		<%= article.title%>
+		</a>
 		</li>
 	<% end %>
 </ul>
