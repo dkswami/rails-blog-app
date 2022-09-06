@@ -36,7 +36,7 @@ class MyarticlesController < ApplicationController
   end
 
   def destroy
-	@article = Article.find(params[:id])
+	@article = Myarticle.find(params[:id])
 	@article.destroy
    
 	redirect_to root_path, status: :see_other
